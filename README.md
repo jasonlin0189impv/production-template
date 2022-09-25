@@ -9,4 +9,4 @@ A python production template
 
 ## 開發相關文件
 
-請參考 CONTRIBUTING.md
+請參考 [CONTRIBUTING.md](https://github.com/jasonlin0189impv/production-template/blob/main/CONTRIBUTING.md)
