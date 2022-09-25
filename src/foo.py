@@ -1,2 +1,2 @@
-def foo():
+def foo() -> str:
     return "hello world"
