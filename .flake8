@@ -1,0 +1,21 @@
+[flake8]
+ignore =
+        # Colons should not have any space before them (E203)
+        E203,
+        # There should be only one leading # for a block comment (E266)
+        E266,
+        # line break before binary operator. Cannot handle with W504 line break after binary operator
+        W503
+        # Line lengths are recommended to be no greater than 79 characters (E501)
+        # E501,
+max-line-length = 120
+exclude = .git,
+        __pycache__,
+        docs,
+        build,
+        dist,
+        *.egg-info,
+        .eggs,
+        venv,
+        __init__.py
+import-order-style = google

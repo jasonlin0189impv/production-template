@@ -1,0 +1,15 @@
+black
+flake8
+isort
+mypy
+pre-commit
+pytest
+pytest-cov
+chispa
+# jupyter
+jupyter
+jupyterlab==3.2.7
+# jupyter linter
+jupyterlab_code_formatter
+# jupyter version control
+nbdime
