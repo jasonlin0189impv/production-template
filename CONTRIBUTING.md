@@ -104,6 +104,12 @@ Jupyter 編輯方式： [Edit] -> [Edit Notebook Metadata]
 make test
 ```
 
+### 如果想執行特定模組測試, 可以執行以下指令
+```sh
+pytest tests/path_of_test_folder/test_file::test_function
+pytest tests/path_of_test_folder/test_file::TestClass::test_function
+```
+
 
 ## VS Code 設定檔
 
