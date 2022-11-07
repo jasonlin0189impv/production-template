@@ -1,4 +1,4 @@
-# Development Guide: Tumblebug
+# Development Guide
 
 ## 安裝開發環境
 
@@ -7,7 +7,7 @@
 git clone [production-template url]
 cd production-template
 
-# 2. 建立屬於 TB 開發的 virtualenv
+# 2. 建立開發的 virtualenv
 # or you can choose conda to create env
 virtualenv -p `which python3.8` venv
 source venv/bin/activate
