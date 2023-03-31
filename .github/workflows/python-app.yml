@@ -1,9 +1,5 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+name: Python CI
 
-name: CI
-
-# push 到 main branch 才會觸發 CI workflow
 on:
   push:
     branches: [ "main" ]
@@ -35,9 +31,9 @@ jobs:
         
     - name: Lint with flake8
       run: |
-       make format
-       make lint
+        make format
+        make lint
        
     - name: Test with pytest
       run: |
-        pytest
+        make test
