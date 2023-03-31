@@ -1,0 +1,40 @@
+name: Python CI
+
+on:
+  push:
+    branches:
+      - main
+
+# 設定環境變數
+env:
+  PYTHON_VERSION: "3.8"
+  STAGE: "dev"
+  
+# 設定執行工作
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v3
+      with:
+        python-version: $PYTHON_VERSION
+        
+    - name: Install dependencies
+      run: |
+        make install
+        if [ "$STAGE" = "dev" ]; then make install-dev; fi
+        
+    - name: Lint with flake8
+      run: |
+        make format
+        make lint
+       
+    - name: Test with pytest
+      run: |
+        make test
