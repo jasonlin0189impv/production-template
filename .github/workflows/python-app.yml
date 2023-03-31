@@ -7,7 +7,6 @@ on:
 
 # 設定環境變數
 env:
-  PYTHON_VERSION: "3.8"
   STAGE: "dev"
   
 # 設定執行工作
