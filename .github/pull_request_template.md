@@ -1,11 +1,10 @@
-<!-- your task card link -->
+your task ticket link here, e.g., `https://jira.ticket.com/`
 
 ## Checklist
 
 - [ ] Ticket identifier convention
-- PR title starts with ticket identifier. eg, `PMAC-1234`
-- First line of PR description is Jira link, eg `https://jr.trendmicro.com/browse/PMAC-2033`
-- [ ] If new ENV variable was added, is `config/env.toml.*` updated?
+- PR title starts with ticket identifier. e.g., `PROD-1234`, `[PROD-1234]`
+- [ ] Other check block you want
 
 ## Why is this change necessary?
 
