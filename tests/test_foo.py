@@ -5,5 +5,6 @@ def test_foo():
     # Given
     # When
     result = foo()
+    
     # Then
     assert result == "hello world"
